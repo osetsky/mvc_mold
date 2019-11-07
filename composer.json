@@ -5,13 +5,16 @@
     "require": {
         "patricklouys/http": "^1.4",
         "nikic/fast-route": "^1.3",
-        "level-2/dice": "^4.0"
+        "level-2/dice": "^4.0",
+        "eftec/bladeone": "^3.31",
+        "php-activerecord/php-activerecord": "^1.2"
     },
 	"autoload": {
         "psr-4": {
-            "App\\": "app/",
+            "Core\\":"app/Core",
+            "App\\": "app",
             "Models\\": "app/Controllers",
-            "Views\\": "app/Controllers",
+            "Views\\": "app/Views",
             "Controllers\\": "app/Controllers"
         }
     }

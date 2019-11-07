@@ -17,10 +17,10 @@ class Home
         $this->request = $request;
     }
 
-    public function show()
+    public function list()
     {
         $content = '<h1>Hello World</h1>';
         $content .= 'Hello ' . $this->request->getParameter('name', 'stranger');
-        $this->response->setContent($content);
+        return $content;
     }
 }
